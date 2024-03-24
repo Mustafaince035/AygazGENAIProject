@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manzara Fotoğrafları Portfolyo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="pngwing.com.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            NatureNook
+        </a>
+        <button class="btn btn-outline-primary mr-2" data-toggle="modal" data-target="#kayitModal">Kayıt</button>
+        <button class="btn btn-outline-success" data-toggle="modal" data-target="#girisModal">Giriş</button>
+    </div>
+</nav>
+
+    
+      <!-- Kayıt Modal -->
+      <div class="modal fade" id="kayitModal" tabindex="-1" role="dialog" aria-labelledby="kayitModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="kayitModalLabel">Kayıt Ol</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Kayıt formu buraya gelecek -->
+              <form>
+                <div class="form-group">
+                  <label for="kayitEmail">Email Adresi</label>
+                  <input type="email" class="form-control" id="kayitEmail" placeholder="Email adresinizi girin">
+                </div>
+                <div class="form-group">
+                  <label for="kayitSifre">Şifre</label>
+                  <input type="password" class="form-control" id="kayitSifre" placeholder="Şifrenizi belirleyin">
+                </div>
+                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Giriş Modal -->
+      <div class="modal fade" id="girisModal" tabindex="-1" role="dialog" aria-labelledby="girisModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="girisModalLabel">Giriş Yap</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Giriş formu buraya gelecek -->
+              <form>
+                <div class="form-group">
+                  <label for="girisEmail">Email Adresi</label>
+                  <input type="email" class="form-control" id="girisEmail" placeholder="Email adresinizi girin">
+                </div>
+                <div class="form-group">
+                  <label for="girisSifre">Şifre</label>
+                  <input type="password" class="form-control" id="girisSifre" placeholder="Şifrenizi girin">
+                </div>
+                <button type="submit" class="btn btn-success">Giriş Yap</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- Slider -->
+  
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1-manazara-resim.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="h5 text-center mb-0"> Alaska, ABD</p>
+          <p class="h5 text-center">20/03/2024</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="2-manzara-resmi.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="h5 text-center mb-0">Ulan Bator, Moğolistan</p>
+          <p class="h5 text-center">31/01/2024</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="3-manazara-resim.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="h5 text-center mb-0">Katmandu, Nepal</p>
+          <p class="h5 text-center">03/01/2024</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+ 
+<!-- Fotoğraflar Kısmı -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Fotoğraflar</h2>
+  <div class="row">
+      <!-- Fotoğraf 1 -->
+      <div class="col-md-4 mb-4">
+          <img src="4-manzara-resmi.jpg" class="img-fluid" alt="Fotoğraf 1">
+          <div class="text-center mt-2">
+              <h6> İstanbul, Türkiye</h6>
+              <p> 10/05/2023 - <a class="uploaded-by-link" href="#">Emma Wilson</a></p>
+          </div>
+      </div>
+      <!-- Fotoğraf 2 -->
+      <div class="col-md-4 mb-4">
+          <img src="5-manzara-resmi.jpeg" class="img-fluid" alt="Fotoğraf 2">
+          <div class="text-center mt-2">
+              <h6> Paris, Fransa</h6>
+              <p> 12/08/2023 - <a class="uploaded-by-link" href="#">James Johnson</a></p>
+          </div>
+      </div>
+      <!-- Fotoğraf 3 -->
+      <div class="col-md-4 mb-4">
+          <img src="6-manzara-resmi.jpg" class="img-fluid" alt="Fotoğraf 3">
+          <div class="text-center mt-2">
+              <h6> Tokyo, Japonya</h6>
+              <p> 05/11/2023 - <a class="uploaded-by-link" href="#">Sophia Lee</a></p>
+          </div>
+      </div>
+      <!-- Fotoğraf 4 -->
+      <div class="col-md-4 mb-4">
+          <img src="7-manzara-resmi.jpg" class="img-fluid" alt="Fotoğraf 4">
+          <div class="text-center mt-2">
+              <h6> New York City, ABD</h6>
+              <p> 20/02/2023 - <a class="uploaded-by-link" href="#">Oliver Brown</a></p>
+          </div>
+      </div>
+      <!-- Fotoğraf 5 -->
+      <div class="col-md-4 mb-4">
+          <img src="8-manzara-resmi.jpg" class="img-fluid" alt="Fotoğraf 5">
+          <div class="text-center mt-2">
+              <h6> Roma, İtalya</h6>
+              <p> 15/04/2023 - <a class="uploaded-by-link" href="#">Isabella Martinez</a></p>
+          </div>
+      </div>
+      <!-- Fotoğraf 6 -->
+      <div class="col-md-4 mb-4">
+          <img src="9-manzara-resmi.jpg" class="img-fluid" alt="Fotoğraf 6">
+          <div class="text-center mt-2">
+              <h6> Rio de Janeiro, Brezilya</h6>
+              <p> 30/06/2023 - <a class="uploaded-by-link" href="#">William Taylor</a></p>
+          </div>
+      </div>
+      <!-- Fotoğraf 7 -->
+      <div class="col-md-4 mb-4">
+          <img src="10-manzara-resmi.jpg" class="img-fluid" alt="Fotoğraf 7">
+          <div class="text-center mt-2">
+              <h6> Moscow, Rusya</h6>
+              <p> 25/09/2023 - <a class="uploaded-by-link" href="#">Sophie Anderson</a></p>
+          </div>
+      </div>
+      <!-- Fotoğraf 8 -->
+      <div class="col-md-4 mb-4">
+          <img src="11-manzara-resmi.jpg" class="img-fluid" alt="Fotoğraf 8">
+          <div class="text-center mt-2">
+              <h6> Cape Town, Güney Afrika</h6>
+              <p> 18/12/2023 - <a class="uploaded-by-link" href="#">Ethan Evans</a></p>
+          </div>
+      </div>
+      <!-- Fotoğraf 9 -->
+      <div class="col-md-4 mb-4">
+          <img src="12-manzara-resmi.jpg" class="img-fluid" alt="Fotoğraf 9">
+          <div class="text-center mt-2">
+              <h6> Sydney, Avustralya</h6>
+              <p> 22/03/2023 - <a class="uploaded-by-link" href="#">Olivia Garcia</a></p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+    
+</div>
+<!-- Fotoğraf Ekle Bölümü -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Fotoğraf Ekle</h2>
+    <div class="row justify-content-center">
+        <!-- Form Alanı -->
+        <div class="col-md-6 mb-4">
+            <form method="post" action="upload.php">
+                <div class="form-group">
+                    <label for="ad">Ad:</label>
+                    <input type="text" class="form-control custom-input" id="ad" name="ad" placeholder="Adınızı girin">
+                </div>
+                <div class="form-group">
+                    <label for="soyad">Soyad:</label>
+                    <input type="text" class="form-control custom-input" id="soyad" name="soyad" placeholder="Soyadınızı girin">
+                </div>
+                <div class="form-group">
+                    <label for="eposta">E-posta:</label>
+                    <input type="email" class="form-control custom-input" id="eposta" name="eposta" placeholder="E-posta adresinizi girin">
+                </div>
+                <div class="form-group">
+                    <label for="fotoYukle">Fotoğraf Seç:</label>
+                    <input type="file" class="form-control-file" id="fotoYukle" name="fotoYukle">
+                    <small class="form-text text-muted">Lütfen fotoğraf seçmek için tıklayın.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Fotoğrafı Yükle</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Kendini Tanıt Bölümü -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 mb-4">
+        <hr> <!-- Ayırıcı çizgi eklendi -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Biz kimiz ?</h2>
+        <p>NatureNook, doğa sevgisi ve keşfi etrafında bir araya gelen bir topluluktur. Doğanın sakinliği, güzelliği ve derinliğiyle ilham alırız ve bu değerleri paylaşarak doğaya olan hayranlığımızı dünyayla paylaşmayı amaçlarız. Biz, NatureNook ekibi olarak, her şeyden önce doğanın gücünü ve büyüsünü kutlarız. Doğa, insanlığın ortak mirasıdır ve onun korunması ve keşfedilmesi herkesin sorumluluğudur. Bu inançla, NatureNook'u doğayla bağlantı kurmak, onu anlamak ve korumak isteyen herkese açık bir platform olarak oluşturduk.
+
+          NatureNook, dünyanın dört bir yanından gelen muhteşem manzaraların bir koleksiyonunu sunar. Dağların eteklerinden, ormanların gizemli içlerine; okyanus dalgalarının kıyılarından, çiçek tarlalarının renkli güzelliklerine kadar her türlü doğal yaşamı keşfetmeyi amaçlarız. Her fotoğraf, sadece bir manzara değil, aynı zamanda bir hikaye anlatır. Bu hikayeler, doğanın bizlere sunduğu dersleri ve ilhamı yansıtır. NatureNook, doğa sevgisinin yayılmasına ve insanların doğayı keşfetme ve koruma konusundaki bilinçlerinin artmasına katkıda bulunmayı amaçlamaktadır.
+          
+          </p>
+      </div>
+      <div class="col-md-6">
+        <img src="pngwing.com.png" class="img-fluid" alt="Kendinizden bir resim">
+      </div>
+    </div>
+  </div>
+
+  
+ <!-- Footer -->
+ <footer class="bg-light text-center text-lg-start mt-5">
+  <div class="text-center p-3">
+      © 2024 Portfolyo |
+      <a href="#"><i class="fab fa-discord mx-2"></i></a>
+      <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+      <a href="https://www.linkedin.com/in/mustafa-ince-2aaa662bb/"><i class="fab fa-linkedin mx-2"></i></a>
+      <a href="https://github.com/Mustafaince035"><i class="fab fa-github mx-2"></i></a>
+      
+      mustafaince035@gmail.com
+  </div>
+</footer>
+
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

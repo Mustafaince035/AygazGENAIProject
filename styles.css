@@ -1,0 +1,61 @@
+/* Navbar ve Brand Renkleri */
+.navbar {
+    background-color: #402A01 !important;
+  }
+  
+  .navbar-brand {
+    color: #FFFFFF !important;
+  }
+  
+  /* Slider Metin Renkleri */
+  .carousel-caption p {
+    color: #FFFFFF !important;
+    font-size: 24px;
+  }
+  
+  /* Bilgi Alanı Başlık ve Metin Renkleri */
+  .container h2 {
+    color: #402A01 !important;
+  }
+  
+  .container p {
+    color: #6C757D !important;
+  }
+  
+  /* Footer Metin Rengi */
+  footer {
+    color: #6C757D !important;
+  }
+  .kendini-tanit {
+    background-color: #402A01;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+  }  
+  
+/* Navbar ve modallerin arka plan rengini ayarla */
+.navbar, .modal-content {
+    background-color: #BFCFD9;
+  }
+  
+  /* Custom input style */
+.custom-input {
+    padding: 0.75rem; /* TextBox içeriğinden kenarlara mesafe */
+    border: 3px solid black; /* Kenarlık kalınlığı ve rengi */
+    border-radius: 0.5rem; /* Kenarlık yuvarlaklığı */
+}
+
+/* Custom file input style */
+
+    .foto-container {
+        border: 3px solid #402401; /* Kenarlık kalınlığı ve rengi */
+        border-radius: 10px; /* Kenarlık yuvarlaklığı */
+        padding: 25px; /* İçerikten kenarlara boşluk */
+    }
+    .carousel-item img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
